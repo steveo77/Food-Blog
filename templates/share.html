@@ -1,0 +1,78 @@
+ {% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+
+<style>
+.featured-row {
+    border:none !important;
+}
+
+
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+{% include "navbar.html" %}
+
+
+
+
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class='row'>
+        <div class='col-md-6 pull-right' style='text-align:center;'>
+          <i class="fa fa-users fa-5x"></i>
+            <h1>Welcome</h1>
+            <p>I am on the hunt to find the best food in Austin and will be adding to the list every couple of weeks. Each week I am going to post on Facebook a list of what I think are the best restaurants and you get to choose your favorite or add a new one. Hopefully we will get enough people to vote and find some new spot together. </p>
+             
+            
+
+
+
+            </div> 
+            
+            <div class='col-md-6 pull-left' style='text-align:center;'>
+              <br/>
+              <br/>
+              <img src="{% static 'img/austinDay.jpg' %}" class='img-responsive img-rounded' />
+
+              <br/>
+              Share<br/>
+
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/stephen.nichols.735/" target="_blank">
+            <i class="fa fa-facebook-square fa-4x" style="color:#3b5998"></i>
+            </a>
+            <a href="https://twitter.com/home?status=go%20to%20http%3A%2F%2Fmeyerweb.com%2Feric%2Ftools%2Fdencoder%2F%20to%20change%20the%20twitter%20tag" target="_blank" >
+             <i class="fa fa-twitter-square fa-4x" style="color:#4099FF"></i>
+              </a>
+               <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ ref_url }}&title=this%20is%20our%20title&summary=this%20is%20our%20title&source={{ ref_url }}" target="_blank">
+              <i class="fa fa-linkedin-square fa-4x" style="color:#007bb6"></i>
+              </a>
+              <a href="http://www.reddit.com/submit?url={{ ref_url }}&title=this%20is%20our%20title" target="_blank">
+               <i class="fa fa-reddit-square fa-4x" style="color:#900020"></i>
+                </a>
+                <a href="https://plus.google.com/share?url"="http://codingforentrepreneurs.com" target="_blank">
+                <i class="fa fa-google-plus-square fa-4x" style="color:#D34836"></i>
+                </a>
+
+
+           
+              </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class='row featured-row'>
+
+
+{% endblock %}

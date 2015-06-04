@@ -1,0 +1,139 @@
+ {% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+
+<style>
+.featured-row {
+    border:none !important;
+  }
+.jumbotron p {
+  font-weight: 175;
+  font-size: 20px;
+}
+
+
+
+
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+{% include "navbar.html" %}
+
+
+
+
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 align="center">Best Pizza In Austin</h1>
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-The Jackalope:</b> Located on east 6th street, is a dive bar serving some of the best bar food in Austin. There burgers have been featured on the food network and other magazines as Austin's best burger. They are big juice burgers with a lot of flavor. This is weird amazing find in the heart of Austin, also ride the Jackalope.</b>
+          <br></b>
+          <br>Price range $8-$11</b>
+          <br>Currently Ranked 1</b>
+          <br><a href="http://www.jackalopebar.com/" target="_blank">http://www.jackalopebar.com/</a></b>
+          </p>
+
+        </div> 
+            
+        <div class='col-md-6 pull-left'>
+          <img src="{% static 'img/jackalope.jpg' %}" class='img-responsive img-rounded' />
+         </div>
+
+      </div>
+
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-Casino El Camino Bar:</b>  Also in the burger district of Austin. Casino el Camino features incredible burgers that have been featured on Diners Drive-ins and Dives. Big flavors in a cool bar downtown.</b>
+          <br></b>
+          <br>Price range $8-$9</b>
+          <br>Currently Ranked 3</b>
+          <br><a href="http://casinoelcamino.net/" target="_blank">http://casinoelcamino.net/</a></b>
+
+          </p>
+
+        </div> 
+            
+          <div class='col-md-6 pull-left'>
+            <img src="{% static 'img/casino.jpg' %}" class='img-responsive img-rounded' />       
+            </div>
+
+      </div>
+         <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-Hopdoddy:</b>  Is a fancier burger joint with a hip south Austin feel. They have a full bar with adult milkshakes. There regular burger menu is delicious, but they run specials burgers which turn out to be amazing. Be prepared to wait, there is usually an 30-60 minute wait.  They do have another location up north with less of a wait time. </b>
+          <br></b>
+          <br>Price range $???</b>
+          <br>Currently Ranked 2</b>
+          <br><a href="http://www.hopdoddy.com/" target="_blank">http://www.hopdoddy.com/</a></b>
+
+            </p>
+
+            </div> 
+            
+            <div class='col-md-6 pull-left'>
+              <img src="{% static 'img/hopdoddy.jpg' %}" class='img-responsive img-rounded' />
+
+           
+              </div>
+
+      </div>        
+     
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-Hut's Hamburgers:</b>This is a classic Austin staple.  It is an old timey dinner that will bring you back in time. The food is exactly as you expect it to be, good food at a good price. Lines some time seem to be long.  </b>
+          <br></b>
+          <br>Price range $6-$10</b>
+          <br>Currently Ranked 4</b>
+          <br><a href="http://www.hutsfrankandangies.com/" target="_blank">www.hutsfrankandangies.com/</a></b>
+            
+            </p>
+
+            </div> 
+
+
+            
+            <div class='col-md-6 pull-left'>
+              <img src="{% static 'img/huts.jpg' %}" class='img-responsive img-rounded' />
+              </div>
+              </div>
+
+            <div class='row'>
+              <div class='col-md-5 pull-right' style='text-align:left;'>
+               <p><br><b>-The Jackalope:</b>  404 East 6th, Austin, TX 78701
+               <p><br><b>-Casino El Camino Bar:</b>  517 E 6th St, Austin, TX 78701
+               <p><br><b>-Hopdoddy:</b>  1415 S Congress Ave Austin, TX 78704
+               <p><br><b>-Hopdoddy:</b>  West Anderson Plaza 2438 W Anderson Ln Austin, TX 78757
+               <p><br><b>-Hut's Burgers:</b> 807 W 6th St, Austin, TX 78703  
+
+              </p>
+
+              </div> 
+              
+              <div class='col-md-6 pull-left'>
+                <iframe src="https://mapsengine.google.com/map/embed?mid=z2Yg2rj3fvQI.k9IjHvt720KY" width="640" height="480"></iframe>
+                </div>
+              </div>
+            
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<div class='row featured-row'>
+
+
+{% endblock %}

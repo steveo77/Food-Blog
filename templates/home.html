@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+  
+  <style>
+    body {
+      border-top: 4px solid #37014F;
+      /*min-height: 5000px;
+      min-width: 500px;*/
+      background: url('{% static "img/foodplate.jpg" %}') no-repeat center center fixed;
+      -webkit-background-size: covers;
+      -moz-background-size: covers;
+      -o-background-size: covers;
+      background-size: covers;
+    }
+
+
+    
+   </style>
+
+
+{% endblock %}
+
+{% block content %}
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style='background-color: white;'>
+      <div class="container">
+          <div class='col-sm-6'>
+          <h1>Steve In Austin</h1>
+          <p>
+          	This is a site were I try to find the best food in Austin. The Facebook page collects peoples favorite restaurants and I eat them and try to find the best foods in Austin. </p>
+          <p><a class="btn btn-default btn-lg btn-block" href="share" role="button">Find good food &raquo;</a></p>
+        </div>
+        <div class='col-sm-6'>
+        <img src="{% static 'img/redPlate.png' %}" class='img-responsive' />
+        </div>
+      </div>
+    </div>
+
+   
+<div class='container' style='text-align:center;color:white;' id="signup">
+<div class='col-sm-6 col-sm-offset-3'>
+  <h1>Get your taste buds ready</h1>
+<!--
+  <form class='form-horizontal' method="POST" action=""> {% csrf_token %}
+    <div class='form-group form-group-lg'>
+     {% if form.email.errors %} 
+      {% for err in form.email.errors %}
+     <div class="alert alert-danger" role="alert"> {{ err }}</div>
+     {% endfor %}
+     {% endif %}
+
+        <div class="input-group">
+    <input class='form-control' type="email" name="email" placeholder="Your email..."/>
+        <span class='input-group-btn'>
+      <input type='submit' value='Join' class='btn btn-primary btn-lg' />
+      </span>
+     </div>
+    </div> 
+  </form>
+  -->
+  <p class='lead'> <br/>And find your new favorite resturaunt</p>
+  
+</div>
+
+</div>
+
+
+
+
+<div class='row featured-row'>
+  <div class='col-sm-12'>
+    
+    <div class='col-sm-3'>
+    <i class="fa fa-pie-chart fa-3x"></i>
+    <h2>Rank Restaurants</h2>
+    <p class='lead'>
+    Rank your favorite restaurants in Austin and share the results. 
+    </p>
+    </div> 
+
+        <div class='col-sm-3'>
+    <i class="fa fa-thumbs-o-up fa-3x"></i>
+    <h2>Find Restaurants</h2>
+    <p class='lead'>
+    Look at the community results to find your new favorite restaurants.
+    </p>
+    </div> 
+
+        <div class='col-sm-3'>
+    <i class="fa fa-street-view fa-3x"></i>
+    <h2>Find Locations Near You</h2>
+    <p class='lead'>
+    GEO-locate the best restaurants near you.
+    </p>
+    </div> 
+
+        <div class='col-sm-3'>
+    <i class="fa fa-heart fa-3x"></i>
+    <h2>Help the World</h2>
+    <p class='lead'>
+    Help us all live a more flavorful life.
+    </p>
+    </div>    
+
+
+
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+
+

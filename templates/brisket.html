@@ -1,0 +1,142 @@
+ {% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+
+<style>
+.featured-row {
+    border:none !important;
+  }
+.jumbotron p {
+  font-weight: 175;
+  font-size: 20px;
+}
+
+
+
+
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+{% include "navbar.html" %}
+
+
+
+
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 align="center">Best Brisket In Austin</h1>
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-Franklin Barbque:</b> Was start by Aaron and Stacey Franklin. What started out as an obsession in there spare time, turned into a food truck. The food truck was so popular that it turned into a brick and mortar.  Now lines average around 4 hours everyday or until they sell out. Franklin Barbecue has been voted best barbecue in the country by several different sources. 
+          <br></b>
+          <br>Price range $20 per lbs</b>
+          <br>CLOSED Mondays Hours: 11am – sold out</b>
+          <br>Currently Ranked 1</b>
+          <br><a href="http://franklinbarbecue.com/" target="_blank">http://franklinbarbecue.com/</a></b>
+          </p>
+
+        </div> 
+            
+        <div class='col-md-6 pull-left'>
+          <img src="{% static 'img/franklin.jpg' %}" class='img-responsive img-rounded' />
+         </div>
+
+      </div>
+
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-La Barbecue:</b> Was started after co-owner LeAnn Mueller and her brother John Mueller parted ways from there previous restaurant JMueller BBQ. She then partnered with former Franklin Barbecue pit master John Lewis.   They start there brisket with a wet rub of mustard, pickle juice and top that with salt, pepper and garlic powder, then slow smoked for 12 to 15 hours. I would try to get there an hour before opening.</b>
+          <br></b>
+          <br>Price range $20 per lbs</b>
+          <br>CLOSED Mondays Hours: 11am – sold out</b>
+          <br>Currently Ranked 2</b>
+          <br><a href="http://www.labarbecue.com/" target="_blank">http://www.labarbecue.com/</a></b>
+
+          </p>
+
+        </div> 
+            
+          <div class='col-md-6 pull-left'>
+            <img src="{% static 'img/labarbecue.jpg' %}" class='img-responsive img-rounded' />       
+            </div>
+
+      </div>
+         <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-Micklethwait Craft Meats:</b>  Was started by Tom Micklethwait, who use to work Vespaio, one of Austin's best restaurants.  Tom does not use the typical salt and pepper rub, he uses pepper,  celery seed, onion powder, garlic, chili flake, chili powder, mustard powder, coriander, mace and smokes it for 10-14 hours.  He then lets the meat rest hot for a couple of hours in the smoke house.</b>
+          <br></b>
+          <br>Price range $20 per lbs</b>
+          <br>Tuesday through Saturday 11am-8pm or till sold out. Sunday 11am-3pm or till sold out.</b>
+          <br>Currently Ranked 3</b>
+          <br><a href="http://www.craftmeats.com/" target="_blank">http://www.craftmeats.com/</a></b>
+
+            </p>
+
+            </div> 
+            
+            <div class='col-md-6 pull-left'>
+              <img src="{% static 'img/micklethwait.jpg' %}" class='img-responsive img-rounded' />
+
+           
+              </div>
+
+      </div>        
+     
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-John Mueller Meat Co:</b> John Mueller is a third-generation pit master, his family has a great reputation for putting out some of the best barbeque in Texas. Customers have come to enjoy his crotchety behavior and is a great part of what keeps Austin weird. John Mueller uses oak smoke to form a perfect crust for his brisket.</b>
+          <br></b>
+          <br>Price range $20 per lbs</b>
+          <br>CLOSED Wednesday Hours: 11am – sold out</b>
+          <br>Currently Ranked 4</b>
+          <br><a href="http://johnmuellermeatco.com/home/" target="_blank">http://johnmuellermeatco.com/</a></b>
+            
+            </p>
+
+            </div> 
+
+
+            
+            <div class='col-md-6 pull-left'>
+              <img src="{% static 'img/johnM.jpg' %}" class='img-responsive img-rounded' />
+              </div>
+              </div>
+
+            <div class='row'>
+              <div class='col-md-5 pull-right' style='text-align:left;'>
+               <p><br><b>-Franklin Barbque:</b>  900 E 11th St, Austin, TX 78702
+               <p><br><b>-La Barbecue:</b>  902 E Cesar Chavez St, Austin, TX 78702
+               <p><br><b>-Micklethwait Craft Meats:</b>  1309 Rosewood Ave, Austin, TX 78702
+               <p><br><b>-John Mueller Meat Co:</b> 2500 E 6th St, Austin, TX 78704 
+
+              </p>
+
+              </div> 
+              
+              <div class='col-md-6 pull-left'>
+              <iframe src="https://mapsengine.google.com/map/embed?mid=z2Yg2rj3fvQI.kh0gQQeepqls" width="640" height="480"></iframe>
+                </div>
+              </div>
+            
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<div class='row featured-row'>
+
+
+{% endblock %}

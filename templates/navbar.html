@@ -1,0 +1,51 @@
+<div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+      <div class='row'>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+         </div>
+        
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+
+<!--             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Rank Restaurants<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="{% url 'rankpizza' %}">Pizza</a></li>
+                <li><a href="#">Burger</a></li>
+                <li><a href="#">Brisket</a></li>
+                <li class="divider"></li>
+              </ul>
+            </li> -->
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Find Restaurants <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+              <!--  <li><a href="#">All Top Ranked Restaurants</a></li>
+                <li class="divider"></li>
+              -->
+                <li><a href="{% url 'pizza' %}">Pizza</a></li>
+                <li><a href="{% url 'burgers' %}">Burgers</a></li>
+                <li><a href="{% url 'brisket' %}">Brisket</a></li>
+              </ul>
+            </li>
+
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+<!--             {% if user.is_authenticated %}
+            <li><a href="{% url 'auth_logout' %}">Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'auth_login' %}">Login</a></li>
+            {% endif %} -->
+     
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>

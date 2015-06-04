@@ -1,0 +1,142 @@
+ {% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+
+<style>
+.featured-row {
+    border:none !important;
+	}
+.jumbotron p {
+	font-weight: 175;
+	font-size: 20px;
+}
+
+
+
+
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+{% include "navbar.html" %}
+
+
+
+
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 align="center">Best Pizza In Austin</h1>
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-Via 313:</b>  was started by two brothers from Detroit that  wanted to bring authentic Detroit pizza two Austin. They have two locations, one is on Rainey street attached to Craft Pride.  The other spot is attached to The violet Crown Social Club on the East side. This pizza has thick chewy crust with the outside lined with different blends of cheese, then they put on a thick layer of cheese on top and add toppings, top that with a thick layer of sauce.</b>
+          <br></b>
+          <br>Price range $8-$16</b>
+          <br>Currently Ranked 1</b>
+          <br><a href="http://www.via313.com/" target="_blank">http://www.via313.com/</a></b>
+          </p>
+
+        </div> 
+            
+        <div class='col-md-6 pull-left'>
+          <img src="{% static 'img/313.jpg' %}" class='img-responsive img-rounded' />
+         </div>
+
+      </div>
+
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-The Backspace:</b>  Owner and chef Shawn Cirkiel’s opened The Backspace right behind his successful restaurant Parkside. The Backspace is a Neapolitan-style pizzeria. The pizza has a light crisp crust, fresh mozzarella, locally sourced toppings and is drizzled with olive oil. Backspace has a full menu and is not exclusive to pizza, all the food that I have had has been excelent. This is a small restaurant, so seating is limited. </b>
+          <br></b>
+          <br>Price range $11-$15</b>
+          <br>Currently Ranked 3</b>
+          <br><a href="http://thebackspace-austin.com/" target="_blank">http://thebackspace-austin.com/</a></b>
+
+          </p>
+
+        </div> 
+            
+          <div class='col-md-6 pull-left'>
+            <img src="{% static 'img/backspace.jpg' %}" class='img-responsive img-rounded' />       
+            </div>
+
+      </div>
+         <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-Home Slice:</b>  Home Slice Pizza was created by Jen and Joseph Strickland and there partner Terri Hannifin back in 2004. It is a New York style pizza, large slices with a crispy crust, generous amounts of cheese and fresh toppings. It is located on South Congress in the trendy South Austin area. They have two locations right next to each other, one for dine in and one for take out. Because of its popularity I would suggest calling ahead. </b>
+          <br></b>
+          <br></b>
+          <br>Price range $13-$20</b>
+          <br>Slices $3.25-$3.75</b>
+          <br>Currently Ranked 4</b>
+          <br><a href="https://www.homeslicepizza.com/" target="_blank">https://www.homeslicepizza.com/</a></b>
+
+            </p>
+
+            </div> 
+            
+            <div class='col-md-6 pull-left'>
+              <img src="{% static 'img/homeslice.jpg' %}" class='img-responsive img-rounded' />
+
+           
+              </div>
+
+      </div>        
+     
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+          <p><br><b>-Hoeks Death Metal Pizza:</b>  Hoeks has been around Downtown Austin since 1993. It features a soft crust with generous amounts of cheese and toppings. This is a classic big slice of pizza 30' inch for the large or 20' inch.  They also sell pizza by the slice. They are not trying to be fancy, great pizza for a fair price. Tuesday - Sunday: 7pm-3am</b>
+          <br></b>
+          <br>Price range ???</b>
+          <br>Slices ???</b>
+          <br>Currently Ranked 2</b>
+          <br><a href="http://www.hoeksdeathmetalpizza.com/" target="_blank">http://www.hoeksdeathmetalpizza.com/</a></b>
+            
+            </p>
+
+            </div> 
+
+
+            
+            <div class='col-md-6 pull-left'>
+              <img src="{% static 'img/heaveymetal.jpg' %}" class='img-responsive img-rounded' />
+              </div>
+              </div>
+
+            <div class='row'>
+              <div class='col-md-5 pull-right' style='text-align:left;'>
+               <p><br><b>-Via 313:</b>  61 Rainey St Austin, TX 78701
+               <p><br><b>-Via 313 </b>1111 E 6th StAustin, TX 78702  
+               <p><br><b>-The Backspace:</b>  507 San Jacinto Blvd Austin, TX 78701
+               <p><br><b>-Home Slice:</b>  1415 S Congress Ave Austin, TX 78704
+               <p><br><b>-Heavey Metal Pizza:</b> 511 E 6th St Austin, TX 78701  
+
+              </p>
+
+              </div> 
+              
+              <div class='col-md-6 pull-left'>
+                <iframe src="https://www.google.com/maps/d/embed?mid=z6MBkq_h6UcA.kqQnDEvatZBE" width="640" height="480"></iframe>
+                </div>
+              </div>
+            
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<div class='row featured-row'>
+
+
+{% endblock %}

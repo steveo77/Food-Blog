@@ -1,0 +1,250 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+
+<style>
+.featured-row {
+    border:none !important;
+	}
+.jumbotron p {
+	font-weight: 175;
+	font-size: 20px;
+}
+
+main{
+	display:flex;
+	flex-direction:row;
+}
+.round{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:200px;
+  list-style:none;
+  padding:0;
+}
+  .round .spacer{ flex-grow:1; }
+  .round .spacer:first-child,
+  .round .spacer:last-child{ flex-grow:.5; }
+
+  .round .game-spacer{
+    flex-grow:1;
+  }
+
+/*
+ *  General Styles
+*/
+body{
+  font-family:sans-serif;
+  font-size:small;
+  padding:10px;
+  line-height:1.4em;
+}
+
+li.game{
+  padding-left:20px;
+}
+
+  li.game.winner{
+    font-weight:bold;
+  }
+  li.game span{
+    float:right;
+    margin-right:5px;
+  }
+
+  li.game-top{ border-bottom:1px solid #aaa; }
+
+  li.game-spacer{ 
+    border-right:1px solid #aaa;
+    min-height:40px;
+  }
+
+  li.game-bottom{ 
+    border-top:1px solid #aaa;
+  }
+
+
+
+}
+
+
+
+
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+{% include "navbar.html" %}
+
+
+<h1>Rank Your Favorite Pizza in Austin</h1>
+<h3>First Place Bracket</h3>
+<main id="tournament">
+	<ul class="round round-1">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">313 </li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">Backspace</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">313</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">Home Slice</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">313</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">Heavy Metal</li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top winner">Bye</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">Bye</li>
+
+
+	</ul>
+	<ul class="round round-2">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">313</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">313</li>
+
+		<li class="spacer">&nbsp;</li>
+
+		
+		<li class="game game-top winner">313</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">Bye</li>
+		<li class="spacer">&nbsp;</li>
+
+	
+		
+	</ul>
+
+	</ul>
+	<ul class="round round-3">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">313</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">313</li>
+
+		<li class="spacer">&nbsp;</li>
+
+				
+	</ul>
+
+		
+
+	</ul>
+	<ul class="round round-4">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">313<span>Ranked 1</span></li>
+		
+		<li class="spacer">&nbsp;</li>
+	</ul>	
+
+
+
+	</ul>
+
+
+</main>
+
+<h3>Second Place Bracket</h3>
+<main id="tournament">
+	<ul class="round round-1">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">Backspace </li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">Home Slice</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">Backspace</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">Heavy Metal</li>
+
+		<li class="spacer">&nbsp;</li>
+
+		
+
+	</ul>
+	<ul class="round round-2">
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">Backspace</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom ">Backspace</li>
+
+		<li class="spacer">&nbsp;</li>
+
+	</ul>
+
+	<ul class="round round-4">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top winner">Backspace<span>Ranked 2</span></li>
+		
+		<li class="spacer">&nbsp;</li>
+	</ul>	
+</main>
+
+<h3>Third Place Bracket</h3>
+<main id="tournament">
+	<ul class="round round-1">
+
+		<li class="spacer">&nbsp;</li>
+		
+		<p><a class="btn btn-default btn-lg btn-block" role="button">Home Slice &raquo;</a></p>
+		<li class="game game-spacer">&nbsp;</li>
+		<p><a class="btn btn-default btn-lg btn-block" role="button">Heavy Metal &raquo;</a></p>
+
+		<li class="spacer">&nbsp;</li>
+
+	</ul>
+
+	<ul class="round round-2">
+		<li class="spacer">&nbsp;</li>
+		<li class="game game-top winner">Heavy Metal<span>Ranked 3</span></li>
+		<li class="spacer">&nbsp;</li>
+	</ul>
+</main>
+
+<h3>Fourth Place Bracket</h3>
+
+<main id="tournament">
+	<ul class="round round-1">
+		<li class="spacer">&nbsp;</li>
+		<li class="game game-top winner">Home Slice<span>Ranked 4</span></li>
+		<li class="spacer">&nbsp;</li>
+	</ul>
+
+
+
+</main>
+	
+	</ul>
+
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+ {% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block styles %}
+
+<style>
+.featured-row {
+    border:none !important;
+  }
+.jumbotron p {
+  font-weight: 175;
+  font-size: 20px;
+}
+
+
+
+
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+{% include "navbar.html" %}
+
+
+
+
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class='row'>
+        <div class='col-md-5 pull-right' style='text-align:left;'>
+            <h1>About</h1>
+            <p>The concept for the website came during during eating some pizza and drinking some beers, as most ideas do. The discussion turned to "What is the best Brisket in town?" Food like art and music is supjective for the most part, what one enjoys does not make it the best. But what I wanted to do was to have a site where you could get data from a large group of people on what they thought was the best and then you could try thoses places for yourself. While there are other sites that do reviews on restaurant, I did not like the reviews.  They either seemed too negative or way to positive.  There are also companies that manage social media and make fraudlant reports on behafe of restaurants. What I would like is a site where it would be all numbers based. 
+
+            </p>
+
+            
+
+            </div> 
+            
+            <div class='col-md-6 pull-left'>
+              <img src="{% static 'img/FrostTower.jpg' %}" class='img-responsive img-rounded' />
+
+           
+              </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class='row featured-row'>
+
+
+{% endblock %}
